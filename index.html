@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Define o conjunto de caracteres e o layout responsivo -->
+  <!-- Define o conjunto de caracteres e configura o layout responsivo -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Método Kirvano - 21 Dias Para Sua Melhor Versão</title>
 
   <!-- Importa a fonte Poppins do Google Fonts -->
@@ -12,64 +12,67 @@
     rel="stylesheet"
   />
 
-  <!-- Estilos da página -->
+  <!-- Estilização da página -->
   <style>
     body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      font-family: "Poppins", sans-serif; /* Define a fonte */
+      margin: 0; /* Remove margens */
+      padding: 0; /* Remove espaçamento interno */
+      background: #f4f4f4; /* Cor de fundo leve */
+      color: #333; /* Cor do texto */
     }
-
     header {
-      background: #2b60de;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+      background: #2b60de; /* Fundo azul */
+      color: white; /* Texto branco */
+      padding: 2rem; /* Espaçamento interno */
+      text-align: center; /* Centraliza o texto */
     }
-
     section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
+      padding: 2rem; /* Espaçamento interno */
+      max-width: 800px; /* Largura máxima da seção */
+      margin: auto; /* Centraliza a seção na tela */
     }
-
     .btn {
-      display: inline-block;
-      background: #2b60de;
-      color: white;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      margin-top: 1rem;
+      display: inline-block; /* Exibe o botão em linha */
+      background: #2b60de; /* Fundo azul */
+      color: white; /* Texto branco */
+      padding: 1rem 2rem; /* Espaçamento interno */
+      text-decoration: none; /* Remove sublinhado */
+      font-weight: bold; /* Deixa o texto em negrito */
+      border-radius: 8px; /* Bordas arredondadas */
+      margin-top: 1rem; /* Espaçamento acima do botão */
+      cursor: pointer; /* Muda cursor ao passar o mouse */
+      transition: background 0.3s ease;
     }
-
+    .btn:hover {
+      background: #1b3f9c; /* Azul mais escuro ao passar o mouse */
+    }
     .highlight {
-      color: #2b60de;
-      font-weight: bold;
+      color: #2b60de; /* Cor de destaque azul */
+      font-weight: bold; /* Negrito */
     }
-
     footer {
-      text-align: center;
-      padding: 2rem;
-      background: #222;
-      color: white;
-      margin-top: 2rem;
+      text-align: center; /* Centraliza o conteúdo */
+      padding: 2rem; /* Espaçamento interno */
+      background: #222; /* Fundo escuro */
+      color: white; /* Texto branco */
+      margin-top: 2rem; /* Espaço acima do rodapé */
     }
   </style>
 
   <!-- Script para depuração -->
   <script>
+    // Verifica se o DOM foi carregado corretamente
     document.addEventListener("DOMContentLoaded", function () {
       console.log("DOM totalmente carregado e analisado.");
 
+      // Depuração de seções
       const sections = document.querySelectorAll("section h2");
       sections.forEach((section, index) => {
         console.log(`Seção ${index + 1}:`, section.textContent);
       });
 
+      // Verifica clique no botão
       const btn = document.querySelector(".btn");
       if (btn) {
         btn.addEventListener("click", function (e) {
@@ -81,48 +84,4 @@
     });
   </script>
 </head>
-
 <body>
-  <header>
-    <h1>Método Kirvano</h1>
-    <p>21 Dias Para Sua Melhor Versão</p>
-  </header>
-
-  <section>
-    <h2>O Que é o Método Kirvano?</h2>
-    <p>
-      O <span class="highlight">Método Kirvano</span> é um programa 100% online de
-      <strong>desenvolvimento pessoal</strong>, com aulas, desafios e ferramentas
-      práticas para ajudar você a evoluir em apenas 21 dias.
-    </p>
-
-    <h2>O Que Você Vai Receber:</h2>
-    <ul>
-      <li>✅ 21 aulas práticas e motivadoras</li>
-      <li>✅ Desafios diários com aplicação imediata</li>
-      <li>✅ Planner digital exclusivo</li>
-      <li>✅ Grupo fechado de suporte</li>
-      <li>✅ Bônus: eBook + áudios de mentalização</li>
-    </ul>
-
-    <h2>Para Quem É:</h2>
-    <p>
-      Para quem sente que está travado na vida e quer mudar com atitude, clareza
-      e foco. Ideal para jovens, adultos e empreendedores.
-    </p>
-
-    <h2>Oferta de Lançamento:</h2>
-    <p>
-      💥 De <del>R$197,00</del> por apenas
-      <span class="highlight">R$49,90</span> com acesso vitalício e todos os bônus
-      inclusos.
-    </p>
-
-    <a class="btn" href="#">Quero Me Transformar Agora</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Método Kirvano. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
